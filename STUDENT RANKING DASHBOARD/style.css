@@ -1,0 +1,51 @@
+*
+{
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
+body
+{
+    background: #b1d3f5;
+    padding: 40px;
+}
+
+.container
+{
+    max-width: 75opx;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-btn,
+.controls
+{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.add-btn input,
+.controls input
+{
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button
+{
+    padding: 10px,18px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}

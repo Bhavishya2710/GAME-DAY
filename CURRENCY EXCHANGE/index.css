@@ -1,0 +1,25 @@
+#div
+{
+    background-color: #51f0e0;
+    color: rgb(184, 0, 37);
+    height: 200px;
+    width: 900px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    display: grid;
+}
+
+#currency-number{
+    width: 420px;
+    height: 20px;
+}
+
+#container{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 280px;
+}

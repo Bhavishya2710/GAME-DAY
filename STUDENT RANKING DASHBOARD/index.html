@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Ranking Dashboard</h1>
+
+        <div class="add-student">
+            <input type="text" id="name-input" placeholder="Student's Name">
+            <input type="number" id="score-input" placeholder="Student's Score">
+            <button id="add-btn">Add Student</button>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="Search Student By Name">
+            <button id="sorting-btn">Sort Students by Score</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="student-table">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
