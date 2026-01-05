@@ -8,6 +8,33 @@
     <title>AI QUIZ</title>
 </head>
 <body>
-    
+    <div class="container">
+        <!-- INPUT -->
+        <section id="inputSection">
+            <h1>AI QUIZ GENERATOR</h1>
+            <textarea id="notesInput" placeholder="Paste your notes here..."></textarea>
+            <button id="generateBtn">Generate Quiz</button>
+        </section>
+
+        <!-- QUIZ -->
+        <section id="quizSection" class="hidden">
+            <h2 id="questionTitle"></h2>
+
+            <div id="options"></div>
+
+            <div class="nav-buttons">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+                <button id="submitBtn" class="hidden">Submit Quiz</button>
+            </div>
+        </section>
+
+        <!-- RESULT -->
+        <section id="resultSection" class="hidden"></section>
+        <h2>Quiz Result</h2>
+        <p id="score"></p>
+        <div id="review"></div>
+
+    </div>
 </body>
 </html>
