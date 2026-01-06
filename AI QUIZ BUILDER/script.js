@@ -107,3 +107,25 @@ function saveAnswer()
 }
 
 /*---------------------------SUBMISSION-------------------------*/
+submitBtn.click = () => {
+    saveAnswer();
+    quizSection.classList.add("hidden");
+    resultSection.classList.remove("hidden");
+
+    let score = 0;
+    reviewDiv.innerHTML = "";
+
+    questions.forEach((q,i) => {
+        const correct = answers[i] === q.answer;
+        if(correct) score++;
+
+        const p = document.createElement("p");
+        p.innerHTML = `
+        Q${i+1}: ${correct ?
+        `<span class="correct">Correct</span>` :
+        `<span class="wrong">Wrong</span> (Correct: ${q.answer})`}
+        `;
+        reviewDiv.appendChild(p);
+    });
+    scoreText.innerText = `Score: ${score} / ${questions.length}`;
+}
